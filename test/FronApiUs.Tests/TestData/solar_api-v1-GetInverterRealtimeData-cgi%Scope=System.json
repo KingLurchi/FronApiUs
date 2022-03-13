@@ -1,0 +1,42 @@
+{
+	"Head" : {
+		"RequestArguments" : {
+			"DataCollection" : "",
+			"Scope" : "System"
+		},
+		"Status" : {
+			"Code" : 0,
+			"Reason" : "",
+			"UserMessage" : ""
+		},
+		"Timestamp" : "2022-03-13T08:02:56+01:00"
+	},
+	"Body" : {
+		"Data" : {
+			"PAC" : {
+				"Unit" : "W",
+				"Values" : {
+					"1" : 0
+				}
+			},
+			"DAY_ENERGY" : {
+				"Unit" : "Wh",
+				"Values" : {
+					"1" : 0
+				}
+			},
+			"YEAR_ENERGY" : {
+				"Unit" : "Wh",
+				"Values" : {
+					"1" : 0
+				}
+			},
+			"TOTAL_ENERGY" : {
+				"Unit" : "Wh",
+				"Values" : {
+					"1" : 0
+				}
+			}
+		}
+	}
+}

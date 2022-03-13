@@ -1,0 +1,44 @@
+{
+	"Head" : {
+		"RequestArguments" : {
+			"DataCollection" : "3PInverterData",
+			"DeviceClass" : "Inverter",
+			"DeviceId" : "1",
+			"Scope" : "Device"
+		},
+		"Status" : {
+			"Code" : 0,
+			"Reason" : "",
+			"UserMessage" : ""
+		},
+		"Timestamp" : "2022-03-13T08:02:06+01:00"
+	},
+	"Body" : {
+		"Data" : {
+			"IAC_L1" : {
+				"Value" : 0.0,
+				"Unit" : "A"
+			},
+			"IAC_L2" : {
+				"Value" : 0.0,
+				"Unit" : "A"
+			},
+			"IAC_L3" : {
+				"Value" : 0.0,
+				"Unit" : "A"
+			},
+			"UAC_L1" : {
+				"Value" : 0.0,
+				"Unit" : "V"
+			},
+			"UAC_L2" : {
+				"Value" : 0.0,
+				"Unit" : "V"
+			},
+			"UAC_L3" : {
+				"Value" : 0.0,
+				"Unit" : "V"
+			}
+		}
+	}
+}

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -6,6 +6,12 @@
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NewFolder\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="NewFolder\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="6.5.1" />
@@ -23,6 +29,24 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\FronApiUs.Core\FronApiUs.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="TestData\solar_api-v1-GetInverterRealtimeData-cgi%25DataCollection=3PInverterData+DeviceId=1+Scope=Device.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\solar_api-v1-GetInverterRealtimeData-cgi%25DataCollection=CommonInverterData+DeviceId=1+Scope=Device.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\solar_api-v1-GetInverterRealtimeData-cgi%25DataCollection=CumulationInverterData+DeviceId=1+Scope=Device.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\solar_api-v1-GetInverterRealtimeData-cgi%25DataCollection=MinMaxInverterData+DeviceId=1+Scope=Device.json.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="TestData\solar_api-v1-GetInverterRealtimeData-cgi%25Scope=System.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

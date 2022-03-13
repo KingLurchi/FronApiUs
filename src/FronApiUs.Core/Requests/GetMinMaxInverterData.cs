@@ -19,13 +19,13 @@ public class GetMinMaxInverterData : IFronApiUsRequest, IRequest<MinMaxInverterD
 
 public class GetMinMaxInverterDataHandler : IRequestHandler<GetMinMaxInverterData, MinMaxInverterData?>
 {
-    private readonly IFronApiUsClient _froniusClient;
+    private readonly IFronApiUsClient _fronApiUsClient;
 
-    public GetMinMaxInverterDataHandler(IFronApiUsClient froniusClient)
+    public GetMinMaxInverterDataHandler(IFronApiUsClient fronApiUsClient)
     {
-        _froniusClient = froniusClient;
+        _fronApiUsClient = fronApiUsClient;
     }
 
     public async Task<MinMaxInverterData?> Handle(GetMinMaxInverterData request, CancellationToken token)
-        => await _froniusClient.Get<MinMaxInverterData>(request, token);
+        => await _fronApiUsClient.Get<MinMaxInverterData>(request, token);
 }

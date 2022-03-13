@@ -1,0 +1,56 @@
+{
+  "Head": {
+    "RequestArguments": {
+      "DataCollection": "MinMaxInverterData",
+      "DeviceClass": "Inverter",
+      "DeviceId": "1",
+      "Scope": "Device"
+    },
+    "Status": {
+      "Code": 0,
+      "Reason": "",
+      "UserMessage": ""
+    },
+    "Timestamp": "2022-03-13T07:33:13+01:00"
+  },
+  "Body": {
+    "Data": {
+      "DAY_PMAX": {
+        "Value": 0,
+        "Unit": "W"
+      },
+      "DAY_UACMAX": {
+        "Value": 0.0,
+        "Unit": "V"
+      },
+      "DAY_UDCMAX": {
+        "Value": 0.0,
+        "Unit": "V"
+      },
+      "TOTAL_PMAX": {
+        "Value": 0,
+        "Unit": "W"
+      },
+      "TOTAL_UACMAX": {
+        "Value": 0.0,
+        "Unit": "V"
+      },
+      "TOTAL_UDCMAX": {
+        "Value": 0,
+        "Unit": "V"
+      },
+      "YEAR_PMAX": {
+        "Value": 0,
+        "Unit": "W"
+      },
+      "YEAR_UACMAX": {
+        "Value": 0.0,
+        "Unit": "V"
+      },
+      "YEAR_UDCMAX": {
+        "Value": 0.0,
+        "Unit": "V"
+      }
+    }
+  }
+}

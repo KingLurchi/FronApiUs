@@ -19,13 +19,13 @@ public class GetCommonInverterData : IFronApiUsRequest, IRequest<CommonInverterD
 
 public class GetCommonInverterDataHandler : IRequestHandler<GetCommonInverterData, CommonInverterData?>
 {
-    private readonly IFronApiUsClient _froniusClient;
+    private readonly IFronApiUsClient _fronApiUsClient;
 
-    public GetCommonInverterDataHandler(IFronApiUsClient froniusClient)
+    public GetCommonInverterDataHandler(IFronApiUsClient fronApiUsClient)
     {
-        _froniusClient = froniusClient;
+        _fronApiUsClient = fronApiUsClient;
     }
 
     public async Task<CommonInverterData?> Handle(GetCommonInverterData request, CancellationToken token)
-        => await _froniusClient.Get<CommonInverterData>(request, token);
+        => await _fronApiUsClient.Get<CommonInverterData>(request, token);
 }

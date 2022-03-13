@@ -19,13 +19,13 @@ public class GetThreePhaseInverterData : IFronApiUsRequest, IRequest<ThreePhaseI
 
 public class GetThreePhaseInverterDataHandler : IRequestHandler<GetThreePhaseInverterData, ThreePhaseInverterData?>
 {
-    private readonly IFronApiUsClient _froniusClient;
+    private readonly IFronApiUsClient _fronApiUsClient;
 
-    public GetThreePhaseInverterDataHandler(IFronApiUsClient froniusClient)
+    public GetThreePhaseInverterDataHandler(IFronApiUsClient fronApiUsClient)
     {
-        _froniusClient = froniusClient;
+        _fronApiUsClient = fronApiUsClient;
     }
 
     public async Task<ThreePhaseInverterData?> Handle(GetThreePhaseInverterData request, CancellationToken token)
-        => await _froniusClient.Get<ThreePhaseInverterData>(request, token);
+        => await _fronApiUsClient.Get<ThreePhaseInverterData>(request, token);
 }

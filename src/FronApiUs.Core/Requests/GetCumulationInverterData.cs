@@ -19,13 +19,13 @@ public class GetCumulationInverterData : IFronApiUsRequest, IRequest<CumulationI
 
 public class GetCumulationInverterDataHandler : IRequestHandler<GetCumulationInverterData, CumulationInverterData?>
 {
-    private readonly IFronApiUsClient _froniusClient;
+    private readonly IFronApiUsClient _fronApiUsClient;
 
-    public GetCumulationInverterDataHandler(IFronApiUsClient froniusClient)
+    public GetCumulationInverterDataHandler(IFronApiUsClient fronApiUsClient)
     {
-        _froniusClient = froniusClient;
+        _fronApiUsClient = fronApiUsClient;
     }
 
     public async Task<CumulationInverterData?> Handle(GetCumulationInverterData request, CancellationToken token)
-        => await _froniusClient.Get<CumulationInverterData>(request, token);
+        => await _fronApiUsClient.Get<CumulationInverterData>(request, token);
 }

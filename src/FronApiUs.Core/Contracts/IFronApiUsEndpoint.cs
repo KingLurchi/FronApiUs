@@ -13,12 +13,13 @@ public interface IFronApiUsEndpoint<out TParameters> where TParameters : IFronAp
     TParameters Parameters { get; }
     object? Content { get; }
 
+    string QueryString => QueryHelpers.AddQueryString($"solar_api/{ApiVersion}/{Route}.cgi", Parameters.ToQueryString());
+
     HttpRequestMessage RequestMessage
     {
         get
         {
-            var queryString = QueryHelpers.AddQueryString($"solar_api/{ApiVersion}/{Route}.cgi", Parameters.ToQueryString());
-            var message = new HttpRequestMessage(Method, queryString);
+            var message = new HttpRequestMessage(Method, QueryString);
             if (Content == null)
                 return message;
 

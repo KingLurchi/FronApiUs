@@ -11,6 +11,12 @@ public class FronApiUsConstants
             public const string MinMax = "MinMaxInverterData";
             public const string ThreePhase = "3PInverterData";
         }
+
+        public class SensorData
+        {
+            public const string MinMax = "MinMaxSensorData";
+            public const string Now = "NowSensorData";
+        }
     }
 
     public static class Platform

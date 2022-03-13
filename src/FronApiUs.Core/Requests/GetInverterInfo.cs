@@ -12,15 +12,15 @@ public class GetInverterInfo : IFronApiUsRequest, IRequest<InverterInfo?>
 
 public class GetInverterInfoQueryHandler : IRequestHandler<GetInverterInfo, InverterInfo?>
 {
-    private readonly IFronApiUsClient _froniusClient;
+    private readonly IFronApiUsClient _fronApiUsClient;
 
-    public GetInverterInfoQueryHandler(IFronApiUsClient froniusClient)
+    public GetInverterInfoQueryHandler(IFronApiUsClient fronApiUsClient)
     {
-        _froniusClient = froniusClient;
+        _fronApiUsClient = fronApiUsClient;
     }
 
     public async Task<InverterInfo?> Handle(GetInverterInfo request, CancellationToken token)
     {
-        return await _froniusClient.Get<InverterInfo>(request, token);
+        return await _fronApiUsClient.Get<InverterInfo>(request, token);
     }
 }

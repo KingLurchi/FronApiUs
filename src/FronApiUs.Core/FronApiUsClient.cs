@@ -3,11 +3,6 @@ using FronApiUs.Core.Contracts;
 
 namespace FronApiUs.Core;
 
-public interface IFronApiUsClient
-{
-    Task<TResponse?> Get<TResponse>(IFronApiUsRequest request, CancellationToken token) where TResponse : IFronApiUsResponse;
-}
-
 public class FronApiUsClient : IFronApiUsClient
 {
     private readonly HttpClient _client;

@@ -1,0 +1,64 @@
+{
+	"Head" : {
+		"RequestArguments" : {
+			"DataCollection" : "CommonInverterData",
+			"DeviceClass" : "Inverter",
+			"DeviceId" : "1",
+			"Scope" : "Device"
+		},
+		"Status" : {
+			"Code" : 0,
+			"Reason" : "",
+			"UserMessage" : ""
+		},
+		"Timestamp" : "2022-03-13T08:00:25+01:00"
+	},
+	"Body" : {
+		"Data" : {
+			"DAY_ENERGY" : {
+				"Value" : 0.0,
+				"Unit" : "Wh"
+			},
+			"FAC" : {
+				"Value" : 0,
+				"Unit" : "Hz"
+			},
+			"IAC" : {
+				"Value" : 0.0,
+				"Unit" : "A"
+			},
+			"IDC" : {
+				"Value" : 0.0,
+				"Unit" : "A"
+			},
+			"PAC" : {
+				"Value" : 0,
+				"Unit" : "W"
+			},
+			"TOTAL_ENERGY" : {
+				"Value" : 0,
+				"Unit" : "Wh"
+			},
+			"UAC" : {
+				"Value" : 0.0,
+				"Unit" : "V"
+			},
+			"UDC" : {
+				"Value" : 0.0,
+				"Unit" : "V"
+			},
+			"YEAR_ENERGY" : {
+				"Value" : 0.0,
+				"Unit" : "Wh"
+			},
+			"DeviceStatus" : {
+				"StatusCode" : 7,
+				"MgmtTimerRemainingTime" : -1,
+				"ErrorCode" : 0,
+				"LEDColor" : 2,
+				"LEDState" : 0,
+				"StateToReset" : false
+			}
+		}
+	}
+}

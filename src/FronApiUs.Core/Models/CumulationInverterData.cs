@@ -12,7 +12,7 @@ public class CumulationInverterDataContent
     public Quantity<int> PowerAc { get; set; } = new();
 
     [JsonPropertyName("DAY_ENERGY")]
-    public Quantity<int> EnergyToday { get; set; } = new();
+    public Quantity<decimal> EnergyToday { get; set; } = new();
     
     [JsonPropertyName("YEAR_ENERGY")]
     public Quantity<decimal> EnergyThisYear { get; set; } = new();

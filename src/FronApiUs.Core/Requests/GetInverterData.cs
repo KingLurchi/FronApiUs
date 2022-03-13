@@ -20,16 +20,16 @@ public class GetInverterData : IFronApiUsRequest, IRequest<List<InverterData>>
 
 public class GetInverterDataHandler : IRequestHandler<GetInverterData, List<InverterData>>
 {
-    private readonly IFronApiUsClient _froniusClient;
+    private readonly IFronApiUsClient _fronApiUsClient;
 
-    public GetInverterDataHandler(IFronApiUsClient froniusClient)
+    public GetInverterDataHandler(IFronApiUsClient fronApiUsClient)
     {
-        _froniusClient = froniusClient;
+        _fronApiUsClient = fronApiUsClient;
     }
 
     public async Task<List<InverterData>> Handle(GetInverterData request, CancellationToken token)
     {
-        var result = await _froniusClient.Get<SystemInverterData>(request, token);
+        var result = await _fronApiUsClient.Get<SystemInverterData>(request, token);
         if (result == null)
             return new List<InverterData>();
 
