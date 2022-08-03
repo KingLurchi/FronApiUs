@@ -1,6 +1,7 @@
 ﻿using FronApiUs.Core.Contracts;
 
 namespace FronApiUs.Core.Endpoints;
+
 public class InverterInfoEndpoint : IFronApiUsEndpoint<IFronApiUsParameters>
 {
     public string ApiVersion => "v1";

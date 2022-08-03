@@ -46,7 +46,7 @@ public class GetInverterDataHandler : IRequestHandler<GetInverterData, List<Inve
                 PowerAc = result.Body.Data.PowerAc.ExtractQuantity(key),
                 EnergyToday = result.Body.Data.EnergyToday.ExtractQuantity(key),
                 EnergyThisYear = result.Body.Data.EnergyThisYear.ExtractQuantity(key),
-                EnergyOverall = result.Body.Data.EnergyOverall.ExtractQuantity(key),
+                EnergyOverall = result.Body.Data.EnergyOverall.ExtractQuantity(key)
             };
 
             inverterData.Add(data);

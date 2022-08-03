@@ -25,7 +25,7 @@ public class ThreePhaseInverterDataContent
 
     [JsonPropertyName("UAC_L3")]
     public Quantity<decimal> VoltagePhaseAC3 { get; set; } = new();
-    
+
     [JsonPropertyName("T_AMBIENT")]
     public Quantity<int> AmbientTemperature { get; set; } = new();
 

@@ -27,5 +27,7 @@ public class GetMinMaxInverterDataHandler : IRequestHandler<GetMinMaxInverterDat
     }
 
     public async Task<MinMaxInverterData?> Handle(GetMinMaxInverterData request, CancellationToken token)
-        => await _fronApiUsClient.Get<MinMaxInverterData>(request, token);
+    {
+        return await _fronApiUsClient.Get<MinMaxInverterData>(request, token);
+    }
 }

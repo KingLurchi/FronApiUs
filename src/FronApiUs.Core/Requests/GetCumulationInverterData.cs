@@ -13,7 +13,7 @@ public class GetCumulationInverterData : IFronApiUsRequest, IRequest<CumulationI
         var parameters = new InverterDataParameters(deviceId, FronApiUsConstants.DataCollection.InverterData.Cumulation);
         Endpoint = new InverterDataEndpoint(parameters);
     }
-    
+
     public IFronApiUsEndpoint<IFronApiUsParameters> Endpoint { get; }
 }
 
@@ -27,5 +27,7 @@ public class GetCumulationInverterDataHandler : IRequestHandler<GetCumulationInv
     }
 
     public async Task<CumulationInverterData?> Handle(GetCumulationInverterData request, CancellationToken token)
-        => await _fronApiUsClient.Get<CumulationInverterData>(request, token);
+    {
+        return await _fronApiUsClient.Get<CumulationInverterData>(request, token);
+    }
 }

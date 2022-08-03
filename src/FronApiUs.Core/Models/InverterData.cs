@@ -10,7 +10,6 @@ public class InverterData : FronApiUsDevice
     public Quantity<long> EnergyOverall { get; set; } = new();
 }
 
-
 public class SystemInverterData : FronApiUsResponse<InverterDataContent>
 {
 }

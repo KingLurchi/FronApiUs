@@ -17,5 +17,4 @@ public class DeviceStatus
 
     public bool StateToReset { get; set; }
     public int StatusCode { get; set; }
-
 }

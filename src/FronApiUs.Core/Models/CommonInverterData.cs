@@ -16,13 +16,13 @@ public class CommonInverterDataContent
 
     [JsonPropertyName("UAC")]
     public Quantity<decimal> VoltageAC { get; set; } = new();
-    
+
     [JsonPropertyName("FAC")]
     public Quantity<decimal> FrequencyAC { get; set; } = new();
-    
+
     [JsonPropertyName("IDC")]
     public Quantity<decimal> CurrentDC { get; set; } = new();
-    
+
     [JsonPropertyName("UDC")]
     public Quantity<decimal> VoltageDC { get; set; } = new();
 

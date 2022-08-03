@@ -2,10 +2,12 @@
 
 public interface IFronApiUsParameters
 {
-    
 }
 
 public class FronApiUsParameters : IFronApiUsParameters
 {
-    public static FronApiUsParameters Empty() => new();
+    public static FronApiUsParameters Empty()
+    {
+        return new FronApiUsParameters();
+    }
 }

@@ -27,5 +27,7 @@ public class GetCommonInverterDataHandler : IRequestHandler<GetCommonInverterDat
     }
 
     public async Task<CommonInverterData?> Handle(GetCommonInverterData request, CancellationToken token)
-        => await _fronApiUsClient.Get<CommonInverterData>(request, token);
+    {
+        return await _fronApiUsClient.Get<CommonInverterData>(request, token);
+    }
 }

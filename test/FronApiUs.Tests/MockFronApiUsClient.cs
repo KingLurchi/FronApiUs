@@ -27,5 +27,7 @@ public class MockFronApiUsClient : IFronApiUsClient
     }
 
     private string CleanFileName(string queryString)
-        => queryString.Replace("?", "%").Replace("&", "+").Replace("/", "-").Replace(".", "-");
+    {
+        return queryString.Replace("?", "%").Replace("&", "+").Replace("/", "-").Replace(".", "-");
+    }
 }

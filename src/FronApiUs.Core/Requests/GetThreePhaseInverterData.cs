@@ -27,5 +27,7 @@ public class GetThreePhaseInverterDataHandler : IRequestHandler<GetThreePhaseInv
     }
 
     public async Task<ThreePhaseInverterData?> Handle(GetThreePhaseInverterData request, CancellationToken token)
-        => await _fronApiUsClient.Get<ThreePhaseInverterData>(request, token);
+    {
+        return await _fronApiUsClient.Get<ThreePhaseInverterData>(request, token);
+    }
 }

@@ -13,10 +13,10 @@ public class CumulationInverterDataContent
 
     [JsonPropertyName("DAY_ENERGY")]
     public Quantity<decimal> EnergyToday { get; set; } = new();
-    
+
     [JsonPropertyName("YEAR_ENERGY")]
     public Quantity<decimal> EnergyThisYear { get; set; } = new();
-    
+
     [JsonPropertyName("TOTAL_ENERGY")]
     public Quantity<long> EnergyOverall { get; set; } = new();
 

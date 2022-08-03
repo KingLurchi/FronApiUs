@@ -1,9 +1,8 @@
-﻿namespace FronApiUs.Core.Models
+﻿namespace FronApiUs.Core.Models;
+
+public class Head
 {
-    public class Head
-    {
-        public RequestArguments RequestArguments { get; set; } = new RequestArguments();
-        public Status Status { get; set; } = new Status();
-        public DateTime Timestamp { get; set; }
-    }
+    public RequestArguments RequestArguments { get; set; } = new();
+    public Status Status { get; set; } = new();
+    public DateTime Timestamp { get; set; }
 }
