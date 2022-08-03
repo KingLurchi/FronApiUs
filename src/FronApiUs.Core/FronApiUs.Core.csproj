@@ -4,25 +4,27 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <PackageVersion>0.0.1</PackageVersion>
+        <PackageVersion>0.0.1-alpha</PackageVersion>
         <Title>FronApiUs</Title>
         <Authors>KingLurchi</Authors>
-        <Description>A http client to make calls to the fronius solar API V1</Description>
+        <Description>Use MediatR requests to make calls to the fronius solar API V1.</Description>
         <Copyright>KingLurchi</Copyright>
         <PackageProjectUrl>https://github.com/KingLurchi/FronApiUs</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/KingLurchi/FronApiUs/blob/main/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/KingLurchi/FronApiUs</RepositoryUrl>
+        <PackageId>FronApiUs</PackageId>
+        <PackageReleaseNotes>Very Work-In-Progress, use at your own risk!</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
-        <Folder Include="Contracts\"/>
-        <Folder Include="Extensions\"/>
-        <Folder Include="Utilities\"/>
+        <Folder Include="Contracts\" />
+        <Folder Include="Extensions\" />
+        <Folder Include="Utilities\" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="MediatR" Version="10.0.1"/>
-        <PackageReference Include="Microsoft.Extensions.Primitives" Version="6.0.0"/>
+        <PackageReference Include="MediatR" Version="10.0.1" />
+        <PackageReference Include="Microsoft.Extensions.Primitives" Version="6.0.0" />
     </ItemGroup>
 
 </Project>
