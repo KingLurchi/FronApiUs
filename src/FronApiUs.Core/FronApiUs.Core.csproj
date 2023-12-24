@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <PackageVersion>0.0.1-alpha</PackageVersion>
@@ -9,8 +9,8 @@
         <Authors>KingLurchi</Authors>
         <Description>Use MediatR requests to make calls to the fronius solar API V1.</Description>
         <Copyright>KingLurchi</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/KingLurchi/FronApiUs</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/KingLurchi/FronApiUs/blob/main/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/KingLurchi/FronApiUs</RepositoryUrl>
         <PackageId>FronApiUs</PackageId>
         <PackageReleaseNotes>Very Work-In-Progress, use at your own risk!</PackageReleaseNotes>
@@ -23,8 +23,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="MediatR" Version="10.0.1" />
-        <PackageReference Include="Microsoft.Extensions.Primitives" Version="6.0.0" />
+        <PackageReference Include="MediatR" Version="12.2.0" />
+        <PackageReference Include="Microsoft.Extensions.Primitives" Version="8.0.0" />
     </ItemGroup>
 
 </Project>
